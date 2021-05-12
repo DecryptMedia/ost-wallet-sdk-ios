@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -219,6 +219,7 @@
 		00ABD3D022A72BE90080C4BB /* OstApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ABD2FE22A72BE90080C4BB /* OstApiError.swift */; };
 		00ABD3D222A72BE90080C4BB /* OstWalletSdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ABD30022A72BE90080C4BB /* OstWalletSdk.swift */; };
 		00D0F61723F58E23002C5DA6 /* OstRedemption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D0F61623F58E23002C5DA6 /* OstRedemption.swift */; };
+		47DBBCC8264B5F37004B592A /* EthereumKit in Frameworks */ = {isa = PBXBuildFile; productRef = 47DBBCC7264B5F37004B592A /* EthereumKit */; };
 		4B4D9379230A9331004EFC9B /* OstTextViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D9378230A9331004EFC9B /* OstTextViewConfig.swift */; };
 		4B4D938A230AE324004EFC9B /* OstDeviceQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D9389230AE324004EFC9B /* OstDeviceQRViewController.swift */; };
 		4B4D938C230AEC27004EFC9B /* OstShowDeviceQRWorkflowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D938B230AEC27004EFC9B /* OstShowDeviceQRWorkflowController.swift */; };
@@ -648,6 +649,7 @@
 				EC38C01722413C94006F8DA2 /* CryptoSwift.framework in Frameworks */,
 				EC38C01822413C94006F8DA2 /* EthereumKit.framework in Frameworks */,
 				EC38C01922413C94006F8DA2 /* SipHash.framework in Frameworks */,
+				47DBBCC8264B5F37004B592A /* EthereumKit in Frameworks */,
 				EC38C01A22413C94006F8DA2 /* FMDB.framework in Frameworks */,
 				EC38C01B22413C94006F8DA2 /* BigInt.framework in Frameworks */,
 				EC38C01C22413C94006F8DA2 /* CryptoEthereumSwift.framework in Frameworks */,
@@ -1526,6 +1528,9 @@
 			dependencies = (
 			);
 			name = OstWalletSdk;
+			packageProductDependencies = (
+				47DBBCC7264B5F37004B592A /* EthereumKit */,
+			);
 			productName = OstWalletSdk;
 			productReference = EC38BE1222413992006F8DA2 /* OstWalletSdk.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1575,6 +1580,9 @@
 				en,
 			);
 			mainGroup = EC38BE0822413992006F8DA2;
+			packageReferences = (
+				47DBBCC6264B5F37004B592A /* XCRemoteSwiftPackageReference "EthereumKitSPM" */,
+			);
 			productRefGroup = EC38BE1322413992006F8DA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -2191,6 +2199,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47DBBCC6264B5F37004B592A /* XCRemoteSwiftPackageReference "EthereumKitSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cuhte3/EthereumKitSPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47DBBCC7264B5F37004B592A /* EthereumKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47DBBCC6264B5F37004B592A /* XCRemoteSwiftPackageReference "EthereumKitSPM" */;
+			productName = EthereumKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC38BE0922413992006F8DA2 /* Project object */;
 }
