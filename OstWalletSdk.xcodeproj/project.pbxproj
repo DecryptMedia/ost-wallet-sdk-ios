@@ -604,7 +604,6 @@
 		4B97428D230E762900174220 /* OstExecuteTransactionViaQRWorkflowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstExecuteTransactionViaQRWorkflowController.swift; sourceTree = "<group>"; };
 		4B97428F230E84E100174220 /* OstVerifyTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstVerifyTransaction.swift; sourceTree = "<group>"; };
 		4B9742A0230FD20D00174220 /* OstDeviceTableViewWithoutActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstDeviceTableViewWithoutActionButton.swift; sourceTree = "<group>"; };
-		4B983CEA22C240D500B9E6D4 /* TrustKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TrustKit.framework; path = Carthage/Build/iOS/TrustKit.framework; sourceTree = "<group>"; };
 		4BE5CF2023E2ADB6001BCB66 /* OstAddSessionWithQRData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstAddSessionWithQRData.swift; sourceTree = "<group>"; };
 		4BE5CF2223E2DBC9001BCB66 /* OstAddSessionQRHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstAddSessionQRHelper.swift; sourceTree = "<group>"; };
 		4BE5CF2423E2F928001BCB66 /* OstAuthorizeExteranSessionViaQRCodeWorkflowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstAuthorizeExteranSessionViaQRCodeWorkflowController.swift; sourceTree = "<group>"; };
@@ -626,17 +625,8 @@
 		4BED02792375A26A00BBBF20 /* OstResourceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstResourceProvider.swift; sourceTree = "<group>"; };
 		4BED027B2375A81900BBBF20 /* OstPresenterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstPresenterHelper.swift; sourceTree = "<group>"; };
 		4BED027D2375ACA800BBBF20 /* OstLoaderIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstLoaderIndicator.swift; sourceTree = "<group>"; };
-		CF0E38A2264DB40500540FA1 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = OstWalletSdk/Utils/OpenSSL/libcrypto.a; sourceTree = "<group>"; };
-		CF0E38A3264DB40500540FA1 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = OstWalletSdk/Utils/OpenSSL/libssl.a; sourceTree = "<group>"; };
 		EC38BE1222413992006F8DA2 /* OstWalletSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OstWalletSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC38BE1B22413992006F8DA2 /* OstWalletSdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OstWalletSdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC38C01022413C93006F8DA2 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
-		EC38C01122413C93006F8DA2 /* EthereumKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EthereumKit.framework; path = Carthage/Build/iOS/EthereumKit.framework; sourceTree = "<group>"; };
-		EC38C01222413C94006F8DA2 /* SipHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SipHash.framework; path = Carthage/Build/iOS/SipHash.framework; sourceTree = "<group>"; };
-		EC38C01322413C94006F8DA2 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = Carthage/Build/iOS/FMDB.framework; sourceTree = "<group>"; };
-		EC38C01422413C94006F8DA2 /* BigInt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BigInt.framework; path = Carthage/Build/iOS/BigInt.framework; sourceTree = "<group>"; };
-		EC38C01522413C94006F8DA2 /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoEthereumSwift.framework; path = Carthage/Build/iOS/CryptoEthereumSwift.framework; sourceTree = "<group>"; };
-		EC38C01622413C94006F8DA2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1464,7 +1454,6 @@
 			children = (
 				00ABD20922A72BE90080C4BB /* OstWalletSdk */,
 				EC38BE1322413992006F8DA2 /* Products */,
-				EC38C00F22413C93006F8DA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1475,23 +1464,6 @@
 				EC38BE1B22413992006F8DA2 /* OstWalletSdkTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EC38C00F22413C93006F8DA2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CF0E38A2264DB40500540FA1 /* libcrypto.a */,
-				CF0E38A3264DB40500540FA1 /* libssl.a */,
-				4B983CEA22C240D500B9E6D4 /* TrustKit.framework */,
-				EC38C01622413C94006F8DA2 /* Alamofire.framework */,
-				EC38C01422413C94006F8DA2 /* BigInt.framework */,
-				EC38C01522413C94006F8DA2 /* CryptoEthereumSwift.framework */,
-				EC38C01022413C93006F8DA2 /* CryptoSwift.framework */,
-				EC38C01122413C93006F8DA2 /* EthereumKit.framework */,
-				EC38C01322413C94006F8DA2 /* FMDB.framework */,
-				EC38C01222413C94006F8DA2 /* SipHash.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2095,10 +2067,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/OstWalletSdk/Utils/OpenSSL",
-				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				MARKETING_VERSION = 2.4.1;
 				"OTHER_LDFLAGS[arch=*]" = "";
@@ -2135,10 +2103,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/OstWalletSdk/Utils/OpenSSL",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				MARKETING_VERSION = 2.4.1;

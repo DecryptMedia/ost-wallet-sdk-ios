@@ -2,10 +2,6 @@
 *.DS_Store
 .DS_Store
 
-# OpenSSL
-OpenSSL/*
-!OpenSSL/.gitkeep
-
 # Pod
 Pods/
 *.xcworkspace
