@@ -2,6 +2,9 @@
 *.DS_Store
 .DS_Store
 
+# OpenSSL
+OpenSSL/*
+!OpenSSL/.gitkeep
 
 # Pod
 Pods/
@@ -14,7 +17,4 @@ xcuserdata/
 #Demo-App
 demo-app/TestDemoApp/Info.plist
 demo-app/TestDemoApp/ServerURLs.swift
-
-#Carthage
-Carthage/
 
