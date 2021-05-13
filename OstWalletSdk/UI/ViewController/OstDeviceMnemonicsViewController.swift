@@ -41,7 +41,7 @@ class OstDeviceMnemonicsViewController: OstBaseScrollViewController {
         stackView.axis = .vertical
         stackView.alignment = UIStackView.Alignment.fill
         stackView.spacing = 24
-        stackView.backgroundColor = .blue
+        stackView.backgroundColor = .white
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
