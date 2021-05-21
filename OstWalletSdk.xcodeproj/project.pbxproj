@@ -310,6 +310,8 @@
 		CF0E3897264DA6C600540FA1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CF0E3896264DA6C600540FA1 /* Alamofire */; };
 		CF0E389A264DA6DD00540FA1 /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = CF0E3899264DA6DD00540FA1 /* FMDB */; };
 		CF0E389D264DA70800540FA1 /* TrustKit in Frameworks */ = {isa = PBXBuildFile; productRef = CF0E389C264DA70800540FA1 /* TrustKit */; };
+		CFCBCF1F2657509E005946CE /* SipHash in Frameworks */ = {isa = PBXBuildFile; productRef = CFCBCF1E2657509E005946CE /* SipHash */; };
+		CFCBCF202657509E005946CE /* SipHash in Embed Frameworks */ = {isa = PBXBuildFile; productRef = CFCBCF1E2657509E005946CE /* SipHash */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CFD9E09D264DBA3F0003F0F3 /* EthereumKit in Frameworks */ = {isa = PBXBuildFile; productRef = CFD9E09C264DBA3F0003F0F3 /* EthereumKit */; };
 		EC38BE1C22413992006F8DA2 /* OstWalletSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC38BE1222413992006F8DA2 /* OstWalletSdk.framework */; };
 /* End PBXBuildFile section */
@@ -323,6 +325,20 @@
 			remoteInfo = OstWalletSdk;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CFCBCF212657509E005946CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFCBCF202657509E005946CE /* SipHash in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0015A0F8236D18E5002AEBB7 /* OstUIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstUIAlertController.swift; sourceTree = "<group>"; };
@@ -634,6 +650,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCBCF1F2657509E005946CE /* SipHash in Frameworks */,
 				CF0E389A264DA6DD00540FA1 /* FMDB in Frameworks */,
 				CF0E388E264DA67B00540FA1 /* BigInt in Frameworks */,
 				CF0E389D264DA70800540FA1 /* TrustKit in Frameworks */,
@@ -1492,6 +1509,7 @@
 				EC38BE0E22413992006F8DA2 /* Sources */,
 				EC38BE0F22413992006F8DA2 /* Frameworks */,
 				EC38BE1022413992006F8DA2 /* Resources */,
+				CFCBCF212657509E005946CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1505,6 +1523,7 @@
 				CF0E3899264DA6DD00540FA1 /* FMDB */,
 				CF0E389C264DA70800540FA1 /* TrustKit */,
 				CFD9E09C264DBA3F0003F0F3 /* EthereumKit */,
+				CFCBCF1E2657509E005946CE /* SipHash */,
 			);
 			productName = OstWalletSdk;
 			productReference = EC38BE1222413992006F8DA2 /* OstWalletSdk.framework */;
@@ -1562,6 +1581,7 @@
 				CF0E3898264DA6DC00540FA1 /* XCRemoteSwiftPackageReference "fmdb" */,
 				CF0E389B264DA70800540FA1 /* XCRemoteSwiftPackageReference "TrustKit" */,
 				CFD9E09B264DBA3F0003F0F3 /* XCRemoteSwiftPackageReference "EthereumKitSPM" */,
+				CFCBCF1D2657509E005946CE /* XCRemoteSwiftPackageReference "SipHash" */,
 			);
 			productRefGroup = EC38BE1322413992006F8DA2 /* Products */;
 			projectDirPath = "";
@@ -2237,6 +2257,14 @@
 				minimumVersion = 1.6.1;
 			};
 		};
+		CFCBCF1D2657509E005946CE /* XCRemoteSwiftPackageReference "SipHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/SipHash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
 		CFD9E09B264DBA3F0003F0F3 /* XCRemoteSwiftPackageReference "EthereumKitSPM" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/DecryptMedia/EthereumKitSPM";
@@ -2272,6 +2300,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CF0E389B264DA70800540FA1 /* XCRemoteSwiftPackageReference "TrustKit" */;
 			productName = TrustKit;
+		};
+		CFCBCF1E2657509E005946CE /* SipHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFCBCF1D2657509E005946CE /* XCRemoteSwiftPackageReference "SipHash" */;
+			productName = SipHash;
 		};
 		CFD9E09C264DBA3F0003F0F3 /* EthereumKit */ = {
 			isa = XCSwiftPackageProductDependency;
